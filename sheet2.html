@@ -1,0 +1,75 @@
+<! doctype html>
+<html>
+    <head>
+        <title>sheet2</title>
+    <meta charset="utf-8">
+    </head>
+    <body>
+        <h1>coronavirus lntake Form attend class</h1><br>
+        <p>for all of safety,please fill this out 24 hours prior ti each class (until further notice) Be sure that the informtion youll give is accurate and comlete. Please get immediate medical attention if you have any of the severe COVID-19 signs </p>
+        <form action="index.html" method="get" autocomplete="on">
+        <fieldset>
+            <legend>Personal Information</legend>
+        <label for="fname">First name:</label><br>
+        <input type="text" id="fname" name="fname" size="10" maxlength="6"><br>
+        <label for="lname">Last name:</label><br>
+        <input type="text" id="lname" name="lname"size="10" maxlength="6">
+        <br>
+            <label for="birthday"> Date of Birth:</label><br>
+        <input type="date" id="birthday" name="birthday" max="1-1-2003" min="1-1-1980">
+            <br>
+            <label for="t" >phone: </label>
+            <br>
+            <input type="tel" id="t" name="phone" pattern="[0-9]-{3}-[0-9]{2}-[0-9]{3}" > <br>
+            <label for="email"> Email:</label><br>
+          <input type="email" id="email" name="email"><br>
+            <label for="aa">Do you have"تطمن-تباعد -توكلنا"APPs in your phone:</label>
+            <input type="radio" id="Yas" name="gender" value="male">
+           <label for="yas">Yas</label>
+         <input type="radio" id="NO" name="gender" value="No">
+  <label for="NO">NO</label><br>
+            
+            </fieldset>  
+            <fieldset>
+                 <legend>class Information</legend>
+                <label for="browsers">choose class:</label>
+           
+                <input list="browsers" name="browser">
+  <datalist id="browsers">
+    <option value="204:wep programming">
+    <option value="201 cs:programming1">
+    <option value="202cs:programming2"></option>
+    <option value="412 cs:computer ethic">
+        </datalist>
+         <p>please explain why you need to attand lab</p> 
+                <textarea name="message" rows="10" cols="30"></textarea>
+            
+         </fieldset>
+            <fieldset>
+                 <legend>Heath Information</legend>
+                <p>How healthy do you feel in general?</p>
+             0<input type="range" id="vol" name="vol" min="0" max="100">100
+                <br>
+                <p>Check the symptoms that you experienced in the PAST week:</p>
+                <input type="checkbox" id="vehicle1" name="vehicle1" value="ff">
+  <label for="vehicle1"> Feve/chills</label><br>
+  <input type="checkbox" id="vehicle2" name="vehicle2" value="hh">
+  <label for="vehicle2"> Headaches</label><br>
+  <input type="checkbox" id="vehicle3" name="vehicle3" value="cc">
+  <label for="vehicle3"> coughing </label><br>
+      <input type="checkbox" id="vehicle1" name="vehicle1" value="ss">
+  <label for="vehicle1"> shortness of breath</label><br>
+  <input type="checkbox" id="vehicle2" name="vehicle2" value="rr">
+  <label for="vehicle2"> Recent loss of sense of smell or tast</label><br>
+            
+            </fieldset>
+            <input type="button" onclick="alert('we receive you request and we will
+contact with you soon ')" value="send">
+
+        
+        
+        
+        </form>
+        
+    </body>
+</html>
