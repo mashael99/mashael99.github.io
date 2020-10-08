@@ -10,10 +10,10 @@ body {
 h1 {
   color: royalblue;
 }
-ul.a {
+ul {
   list-style-type: square;
 }
-ol.d {
+ol {
   list-style-type: lower-alpha;
 }
 a:visited {
