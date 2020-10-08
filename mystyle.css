@@ -10,3 +10,15 @@ body {
 h1 {
   color: royalblue;
 }
+ul.a {
+  list-style-type: square;
+}
+ol.d {
+  list-style-type: lower-alpha;
+}
+a:visited {
+  color: red;
+}
+a:link {
+  color: blue;
+}
