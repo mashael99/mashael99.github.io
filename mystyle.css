@@ -22,3 +22,13 @@ a:visited {
 a:link {
   color: blue;
 }
+a:hover {
+  color: green;
+}
+a:active {
+  color: black;
+}
+a:link {
+  text-decoration: none;
+}
+
