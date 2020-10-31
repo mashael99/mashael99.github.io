@@ -1,0 +1,57 @@
+<!DOCTYPE html>
+<html> 
+<head>
+<meta charset=utf-8 />
+<title>JavaScript program to calculate multiplication and division of two numbers </title>
+<style type="text/css">
+body {margin: 30px;}
+</style> 
+</head>
+<body>
+<div id="divTxt"></div>
+<form>
+
+<input type="hidden" Value="" />
+<input type="button" onClick="calc()" Value="Calcalte" />
+</form>
+<p>The total of grade  : <span id = "totalgrade"></span></p><br>
+<p>The avarage of grade  : <span id = "avg"></span></p>
+</body>
+</html>
+<script>
+
+    var username=0;
+     username = prompt("Enter your number wante: ", "");
+	
+	createMany(username);
+    
+
+function calc()
+{var	 total=0
+   
+		for(i=0;i<username;i++){
+		total += parseInt(document.getElementById("txtNum"+i).value);
+	}
+	
+	
+	//var	 total=num1+num2+num3+num4+num5;
+        document.getElementById("totalgrade").innerHTML = total;
+		document.getElementById("avg").innerHTML = total / username;
+
+}
+
+
+
+
+function createMany(nums){
+	var str = "";
+	for(i=0;i<nums;i++){
+		str += "enter the grade of student"+(s=i+1)+" <input type='text' id='txtNum"+i+"' /> <br/>";
+	}
+	
+	document.getElementById("divTxt").innerHTML = str;
+}
+
+
+
+</script>

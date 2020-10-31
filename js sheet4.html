@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html> 
+<head>
+<meta charset=utf-8 />
+<title>JavaScript program to calculate multiplication and division of two numbers </title>
+<style type="text/css">
+body {margin: 30px;}
+</style> 
+</head>
+<body>
+<h1>BMI calculate CREATE Using javascript</h1>
+<form>
+Your Wieght (kg) : <input type="text" id="weight" /><br>
+Your Height (cm) : <input type="text" id="height" /><br>
+
+
+<input type="button" onClick="calc()" Value="Calcalte BMI" />
+</form>
+<p>Your BMI : <span id = "result"></span></p><br>
+<p>This means  Your BMI: <span id = "msg"></span></p>
+</body>
+</html>
+<script>
+
+
+function calc()
+{
+   var height = Number(document.getElementById("height").value);
+var weight = Number(document.getElementById("weight").value);
+m=height/100;
+var bmi = weight / (m * m);
+        document.getElementById("result").innerHTML = bmi;
+		if(bmi<18.5){
+		document.getElementById("msg").innerHTML = "underWeight";}
+		else if(bmi>18.5&&bmi<24.9){	document.getElementById("msg").innerHTML = "healthy Weight";}
+
+else if(bmi>25&&bmi<29.9){	
+	document.getElementById("msg").innerHTML = "Over Weight";}
+
+else if(bmi>30){	document.getElementById("msg").innerHTML = "Obese";}
+}
+
+
+
+</script>

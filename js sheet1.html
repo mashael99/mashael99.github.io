@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<style>
+body {
+  padding: 25px;
+  background-color: white;
+  color: black;
+  font-size: 25px;
+}
+.light-mode {
+  background-color: white;
+  color: black;
+}
+.dark-mode {
+  background-color: black;
+  color: white;
+}
+</style>
+</head>
+<body>
+
+<h1>This is heading1</h1>
+<p>JavaScript is scripting language which is used to enhance the functionality and appearance of web pages.
+        JavaScript is a lightweight, cross platform, object-oriented computer programming language.</p>
+
+<button onclick="dark()"> light mode</button>
+<button onclick="dark()"> dark mode</button>
+
+<script>
+function dark() {
+   var element2 = document.body;
+   element2.classList.toggle("dark-mode");
+}
+function light() {
+   var element2 = document.body;
+   element2.classList.toggle("light-mode");
+}
+</script>
+
+</body>
+</html>
